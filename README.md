@@ -8,7 +8,7 @@ Homebrew formulae that allows installation of
 
 ```
 brew tap tempestdx/tap
-brew install tempest-cli
+brew install tempest
 ```
 
 ## Upgrade
