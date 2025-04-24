@@ -5,21 +5,21 @@
 class Tempest < Formula
   desc ""
   homepage "https://tempestdx.com/"
-  version "0.1.17"
+  version "0.1.18"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tempestdx/cli/releases/download/v0.1.17/tempest_Darwin_x86_64.tar.gz"
-      sha256 "0d6a714ce2e1441ce0b34fa62364e9a476989f5011a2d03a68e73066d4d0eaf9"
+      url "https://github.com/tempestdx/cli/releases/download/v0.1.18/tempest_Darwin_x86_64.tar.gz"
+      sha256 "1112c92aa08af5fc1dc16a476d702860cd8bac3206073045e6bc5daa970eed2c"
 
       def install
         bin.install "tempest"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tempestdx/cli/releases/download/v0.1.17/tempest_Darwin_arm64.tar.gz"
-      sha256 "6b2696da37b9adb26302b69bc0e9484e352d72410b4b36240286aec66f2e41c7"
+      url "https://github.com/tempestdx/cli/releases/download/v0.1.18/tempest_Darwin_arm64.tar.gz"
+      sha256 "81149109bd3f3fdd04c4939e6056772f883ae902711019f483e82cc7f362e47e"
 
       def install
         bin.install "tempest"
@@ -30,8 +30,8 @@ class Tempest < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/tempestdx/cli/releases/download/v0.1.17/tempest_Linux_x86_64.tar.gz"
-        sha256 "ff851be1e40e8d638406b3e0f76ba932a30538b8db8d0de0f4336e073d11c6cc"
+        url "https://github.com/tempestdx/cli/releases/download/v0.1.18/tempest_Linux_x86_64.tar.gz"
+        sha256 "35332b5aaef3ecfc08f99050e9d448935354e97c625b26d78ed159dfae28925c"
 
         def install
           bin.install "tempest"
@@ -40,8 +40,8 @@ class Tempest < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/tempestdx/cli/releases/download/v0.1.17/tempest_Linux_arm64.tar.gz"
-        sha256 "a370e7081404882e269c8f4b23633682507d0b92f832e611655c3677cdff4d27"
+        url "https://github.com/tempestdx/cli/releases/download/v0.1.18/tempest_Linux_arm64.tar.gz"
+        sha256 "34883c8b06f2e6a26c85702086b80f2f104070299fa5a2d18d572fd62addc177"
 
         def install
           bin.install "tempest"
